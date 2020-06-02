@@ -5,6 +5,7 @@ let food;
 let interval;
 let isPlaying = false;
 
+
 //selector for grid cells
 let cells = document.querySelectorAll('.cell');
 
@@ -43,26 +44,26 @@ head.className = 'active';
 //direction handling
 document.addEventListener('keydown', (event) => {
   if( event.which === 37) {
-    // console.log('moving left!')
+    console.log('moving left!')
     if (direction === 'right') return;
     direction = 'left';
   } else if ( event.which === 39 ) {
-    // console.log('moving right!')
+    console.log('moving right!')
     if (direction === 'left') return;
     direction = 'right';
   } else if ( event.which === 38 ) {
-    // console.log( 'moving up!')
+    console.log( 'moving up!')
     if (direction === 'down') return;
     direction = 'up';
   } else if ( event.which === 40 ) {
-    // console.log('moving down!')
+    console.log('moving down!')
     if (direction === 'up') return;
     direction = 'down';
   }
 })
 
 function moveSnake() {
-  // console.log('direction: ', direction)
+  console.log('head: ', head)
   isPlaying = true;
   let tailCoords = snake[0]
   let tail = document.querySelector(`[data-x='${tailCoords[0]}'][data-y='${tailCoords[1]}']`)
@@ -110,10 +111,11 @@ start.addEventListener('click', () => {
   direction = 'right'
   snakeCells.forEach(cell => cell.className = '.cell');
   head = document.querySelector('#start');
+
   head.className = 'active';
   snake = [];
   startSnake();
-  interval = setInterval(moveSnake, 150);
+  interval = setInterval(moveSnake, 125);
   dropPellet();
 })
 
