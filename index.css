@@ -28,7 +28,7 @@ body {
   margin: 5rem auto;
   height: 65rem;
   width: 65rem;
-  border: solid red 1px;
+  border: dotted red 4px;
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(20, 1fr);
@@ -55,14 +55,14 @@ body {
   width: 10rem;
   height: 3.6rem;
   /* padding-top: 10rem; */
-  background-color:	rgb(242,243,244);
+  background: radial-gradient( #D3D3D3, #A9A9A9);
   border: solid 1px;
   border-radius: 2px;
   border-color: tomato;
   text-align: center;
   box-shadow: outset 0rem 2rem 2rem rgba(0,0,0,.4);
 
-  background: #ededed;
+  /* background: #ededed; */
   border: 1px solid #ccc;
   padding: .5rem;
   border-radius: 3px;
@@ -76,14 +76,14 @@ body {
   width: 10rem;
   height: 3.6rem;
   /* padding-top: 10rem; */
-  background-color:	rgb(242,243,244);
+  background: radial-gradient( #D3D3D3, #A9A9A9);
   border: solid 1px;
   border-radius: 2px;
   border-color: tomato;
   text-align: center;
   box-shadow: inset 0rem .5rem 1rem rgba(0,0,0,1);
 
-  background: #ededed;
+  /* background: #ededed; */
   border: 1px solid #ccc;
   padding: .5rem;
   border-radius: 3px;
