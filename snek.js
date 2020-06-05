@@ -4,10 +4,12 @@ let start = document.querySelector('#start-button');
 let food;
 let interval;
 let isPlaying = false;
+let score = 0;
 
 
 //selector for grid cells
 let cells = document.querySelectorAll('.cell');
+const scoreBox = document.querySelector('.score');
 
 //create coordinate matrix
 let coords = [];

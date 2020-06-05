@@ -28,7 +28,7 @@ body {
   margin: 5rem auto;
   height: 65rem;
   width: 65rem;
-  border: solid red 1px;
+  border: dotted red 4px;
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(20, 1fr);
@@ -88,4 +88,14 @@ body {
   padding: .5rem;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.score {
+  display: none;
+  position: absolute;
+  top: 4rem;
+  right: 8rem;
+  color: tomato;
+  font-size: 3.5rem;
+
 }
